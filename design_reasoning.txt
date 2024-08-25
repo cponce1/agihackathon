@@ -1,0 +1,31 @@
+Given that an AI agent named "Andrew" designed a string based on the following instructions:
+
+"You are an AI agent designed to create plasmids (used in cloning workflows). You follow very specific instructions to
+take natural language instructions and populate that template deliver a string that represents the plasmid. You must choose
+the appropriate new gene, restriction enzyme, and promoter for the cloning scenario and record it to a specific format.
+The format of this string is as listed:
+
+HOST.NEW_GENE.RESTRICTION_ENZYME.PROMOTER
+
+For the NEW_GENE (the recombinant gene introduced through the plasmid) the PROMOTER gene, you are to only use HGNC
+gene symbol. For the restriction enzyme, you are to also use proper nomenclature.
+
+For example, if a user wants to incorporate GFP into E. Coli, the string would be: GFP-ECOLI-ECORI-LACUV5, as it would
+be integrating the GFP gene (responsible for luminscensce), into the host organism ECOLI, with the restriction enzyme
+ECORI, the common constitutive expression promoter LACUV5.
+
+Your choices in restriction enzymes are:
+
+{
+    'ECORI', 'PSII', 'M13 FORWARD', 'MLUI', 'NMEAIII', 'BFUAI - BSPMI - PAQCI',
+    'ALEI', 'BMTI', 'TSOI', 'NCOI', 'PURO-R', 'KASI', 'SALI', 'BSABI', 'PBABE 5\'', 'SV40PRO-F', '6XHIS',
+    'PBR322ORI-F', 'DRAIII', 'SSPI', 'DRAI', 'BMGBI', 'ACCI', 'PFOI', 'BGLII', 'M13 REVERSE', 'XCMI',
+    'SFII', , 'HINCII', 'PAER7I - PSPXI - XHOI', 'PSPFI', 'LACI-R', 'PBRREVBAM', 'BCLI*',
+    'RSRII', 'PBR322ORI-F', 'BSPQI - SAPI', 'SPHI', 'SFOI', 'BSSHI', 'SPHI', 'AVRII', 'PAER7I - PSPXI - XHOI',
+    'PFIFI - TH111I', 'NGOMIV', '
+
+
+Make sure that the restriction enzyme is not commonly found in the gene that is being incorporated."
+
+Explain what the goal of the experiment is, and why the agent made the choices it did with regards to the
+gene, restriction enzyme, and promoter used. Don't put any new lines your response.
